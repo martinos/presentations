@@ -1,0 +1,71 @@
+Servez Vos Propres Gems
+2 Février 2015
+
+Martin Chabot
+Développeur Ruby
+chabotm@gmail.com
+@martinosis
+
+* Pourquoi?
+
+- Développer vos gems privés
+- Développer vos gems en version pre-alpha 
+
+* Geminabox
+
+Geminabox vous permet de servir vos propre gems tout en ajoutant la possiblilité d'y pousser les votres.  
+
+* Installation du serveur
+
+Installez le gem
+
+  gem install geminabox
+
+Creez le répertoire de votre application
+
+  mkdir gemsrepo
+  cd gemsrepo
+  vi config.ru
+
+.code serveur_de_gems/config.ru
+
+* Démarrez le serveur 
+
+.play serveur_de_gems/start_server.sh /START OMIT/,/END OMIT/
+
+* Visitez
+
+Vous pouvez accéder à l'inteface web de Geminabox en allant à
+
+.link http://localhost:9292
+
+* Configurer vos machines client:
+
+Sans authentification
+
+  gem source http://localhost:9292
+
+Basic Auth
+
+  gem source http://username:secret1234@localhost:9292
+
+* Commande gem inabox pour "uploader" vos gems
+
+Configuration sans authentification
+
+  gem inabox -c
+  Enter the root url for your personal geminabox instance (e.g. http://gems/).
+  Host:  http://localhost:9292
+
+Configuration avec authentification
+
+  gem inabox -c
+  Enter the root url for your personal geminabox instance (e.g. http://gems/).
+  Host:  http://username:secret1234@localhost:9292
+
+Pour pousser un gem
+
+  cd my_gem_root
+  gem inabox
+
+
