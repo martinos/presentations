@@ -39,17 +39,7 @@ Vous pouvez accéder à l'inteface web de Geminabox en allant à
 
 .link http://localhost:9292
 
-* Configurer vos machines client:
-
-Sans authentification
-
-  gem source http://localhost:9292
-
-Basic Auth
-
-  gem source http://username:secret1234@localhost:9292
-
-* Commande gem inabox pour "uploader" vos gems
+* Comment uploader vos gems 
 
 Configuration sans authentification
 
@@ -67,5 +57,15 @@ Pour pousser un gem
 
   cd my_gem_root
   gem inabox
+
+* Configurer vos machines client:
+
+Sans authentification
+
+  gem source -a http://localhost:9292
+
+Basic Auth
+
+  gem source -a http://username:secret1234@localhost:9292
 
 

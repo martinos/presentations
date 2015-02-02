@@ -1,4 +1,3 @@
-require "rubygems"
 require "geminabox"
 
 # If you want to add basic authentication
