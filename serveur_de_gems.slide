@@ -6,10 +6,17 @@ Développeur Ruby
 chabotm@gmail.com
 @martinosis
 
-* Pourquoi?
+* Qu'est-ce qu'un Gem?
+
+- librarie Ruby sous forme de package (tar.gz)
+- Le nom du package a .gem comme extension
+- Normalement hébergé sur rubygems.org
+
+* Pourquoi servir vos gems?
 
 - Développer vos gems privés
 - Développer vos gems en version pre-alpha 
+- Éliminer les dépendance à rubygems.org
 
 * Geminabox
 
@@ -58,6 +65,7 @@ Configuration avec authentification
 Pour pousser un gem
 
   cd my_gem_root
+  rake build
   gem inabox
 
 * Configurer vos machines client:
@@ -69,6 +77,14 @@ Sans authentification
 Basic Auth
 
   gem source -a http://username:secret1234@localhost:9292
+ 
+  cat  ~/.gemrc
+
+.code serveur_de_gems/.gemrc
+
+Vous pouvez alors downloader vos gem
+
+  gem install my_gem
 
 
 * Questions
