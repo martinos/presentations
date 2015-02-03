@@ -13,7 +13,7 @@ chabotm@gmail.com
 
 * Geminabox
 
-Geminabox vous permet de servir vos propre gems tout en ajoutant la possiblilité d'y pousser les votres.  
+Le gem Geminabox est à la fois un serveur de gems ainsi qu'un utilitaire servant à pousser les gems vers ce dernier.
 
 * Installation du serveur
 
@@ -21,7 +21,7 @@ Installez le gem
 
   gem install geminabox
 
-Creez le répertoire de votre application
+Créez le répertoire de votre application
 
   mkdir gemsrepo
   cd gemsrepo
@@ -31,9 +31,11 @@ Creez le répertoire de votre application
 
 * Démarrez le serveur 
 
+Executez dans le répertoire gemrepo:
+
 .play serveur_de_gems/start_server.sh /START OMIT/,/END OMIT/
 
-* Visitez
+* Interface web
 
 Vous pouvez accéder à l'inteface web de Geminabox en allant à
 
@@ -67,5 +69,10 @@ Sans authentification
 Basic Auth
 
   gem source -a http://username:secret1234@localhost:9292
+
+
+* Questions
+
+Vous avez des questions?
 
 
